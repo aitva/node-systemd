@@ -1,0 +1,12 @@
+[Unit]
+Description=Node Systemd
+
+[Service]
+ExecStart=/usr/local/bin/node /home/larod/node/node-systemd
+Restart=always
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/home/larod/node/node-systemd
+
+[Install]
+WantedBy=multi-user.target
