@@ -9,4 +9,4 @@ Environment=NODE_ENV=production
 WorkingDirectory=/home/larod/node/node-systemd
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
